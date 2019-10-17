@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Unlimited team</title>
+  <!-- Icon Css Incloude-->
+  <link rel="stylesheet" href="css/all.css" />
+
+  <!-- Css Frameworks Include-->
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <!-- Carousel Css Include-->
+  <link rel="stylesheet" href="css/slick.css" />
+  <link rel="stylesheet" href="css/aos.css" />
+  <link rel="stylesheet" href="css/animate.css" />
+  <!-- Custom Css Include-->
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+
+  <!-- start button UP -->
+  <div id="btnUp" class="text-center">
+    <i class="fas fa-angle-double-up"></i>
+  </div>
+  <!-- end button UP -->
+  <!-- Header Section - Start  -->
+  <header class="header">
+
+    <!-- start Loading  section-->
+    <section class="loading ">
+      <div class="SpacedDiv"></div>
+      <div class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+      </div>
+    </section>
+    <!-- end Loading  section-->
+
+    <!-- start LeftSideBar toggler -->
+    <section class="leftSideBar">
+      <div class="fixedSideBar">
+        <div class="container">
+          <div class="col-12 mt-4">
+            <div class="close-Icon text-right">
+              <a id="Exit-icon">
+                <i class="fas fa-times fa-spin" id="close-icon"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-12 mt-5">
+            <div class="fast-contact">
+              <h3 class="font-weight-bolder pb-4">Contact Us</h3>
+              <p><i class="fas fa-phone fa-rotate-90"></i><span class="pl-2"> +30 241 844 250</span></p>
+              <p><i class="fas fa-envelope "></i><span class="pl-2"> niva@example.com</span></p>
+              <p><i class="fas fa-map-marker-alt "></i><span class="pl-2"> New York 11673 Collins Street West Victoria
+                  United State.</span></p>
+              <p>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="pl-4"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="pl-4"><i class="fab fa-behance"></i></a>
+              </p>
+
+            </div>
+          </div>
+          <div class="col-12 mt-5">
+            <div class="latest-projects">
+              <h3 class="font-weight-bolder pb-4">Latest projects</h3>
+              <div class="row">
+                <div class="col-lg-6">
+                  <img src="Images/1(1).jpg" class="img-fluid">
+                </div>
+                <div class="col-lg-6 mt-xl-4">
+                  <a href="#">
+                    <h6>Top 6 Articles You Must Read</h6>
+                  </a>
+                  <p>OCTOBER 14, 2018</p>
+                </div>
+
+
+
+                <div class="col-lg-6 mt-4">
+                  <img src="Images/latest-creation-150x150.jpg" class="img-fluid">
+                </div>
+                <div class="col-lg-6 mt-4">
+                  <a href="#">
+                    <h6>Top 6 Articles You Must Read</h6>
+                  </a>
+                  <p>OCTOBER 14, 2018</p>
+                </div>
+
+
+
+                <div class="col-lg-6 mt-4 ">
+                  <img src="Images/st-portfolio4-150x150.jpg" class="img-fluid">
+                </div>
+                <div class="col-lg-6 mt-4">
+                  <a href="#">
+                    <h6>Top 6 Articles You Must Read</h6>
+                  </a>
+                  <p>OCTOBER 14, 2018</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end LeftSideBar toggler -->
+
+    <!-- Start navBar -->
+    <nav class="navbar navbar-expand-lg navbar-light  team-nav bg-white overflow-hidden ">
+      <div class="container">
+
+        <div class="w-50 my-lg-3">
+        <a class="navbar-brand" href="#"><img src="Images/L2.png" class="img-fluid"></a>
+      </div>
+        <div class="animatedToggler navbar-toggler d-lg-none my-3 mx-3 " data-toggle="collapse"
+          data-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
+          aria-label="Toggle navigation" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+
+        <div class="collapse navbar-collapse visible-lg-block" id="collapsibleNavId">
+          <ul class="navbar-nav m-auto mt-2 mt-lg-0">
+
+            <li class="nav-item">
+              <a class="nav-link border-hover" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link border-hover" id="aboutUsID" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link border-hover" id="servicesID" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link border-hover" id="projectsID" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link border-hover" id="ourteamID" href="#">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link border-hover" id="testimonialID" href="#">Testimonial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link border-hover" id="blogID" href="#">Blog</a>
+            </li>
+            <li class="nav-item ml-1 ">
+              <a class="nav-link">
+                <div class="animatedToggler homeToggleIcon">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+                </div>
+              </a>
+            </li>
+          </ul>
+
+        </div>
+
+
+      </div>
+    </nav>
+    <!-- end navBar -->
+
+    <!-- start Home page -->
+    <section class="Home">
+      <div class="home-overlayer">
+        <div class="home-info d-flex justify-content-center text-center align-items-center">
+          <div>
+            <h1 class="animated zoomInDown delay-1s">UNLIMITED TEAM</h1>
+            <p class="mb-5 animated flipInY delay-1s">We accelerate our client's innovation advantage.</p>
+            <div class="animated bounceInUp delay-2s">
+              <a class="homeBtn ">
+                Who We Are ?
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- end Home page -->
+  </header>
+  <!-- Header Section - End-->
+
+  <!-- Main Content - Start -->
+  <main>
+    <!-- start We Build Awesome Web sites section -->
+    <section class="awesomeWeb pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 text-center ">
+            <div class="awesomeLEFT">
+              <img src="Images/home-elements-awesomev-11-1.jpg" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="awesomeRIGHT">
+              <h6>PROFESSIONALS</h6>
+              <h2>We Build Awesome Websites</h2>
+              <p>Whether you need a new logo, website, video, marketing campaign, or eBook created for your business,
+                the key to making the project a success starts with having well-thought-out creative brief.</p>
+              <!-- <div class="col-12"> -->
+              <a href="#" class="btn mb-5"><i class="far fa-calendar-alt"></i> Ask The Offer!</a>
+              <!-- </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end We Build Awesome Web sites section -->
+
+
+
+    <!-- start niceHover -->
+    <section class="nice-Hover pt-5 overflow-hidden">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="team-info"  data-aos="fade-right">
+              <div class="vectorIMG ">
+                <div class="text-center">
+                  <img src="Images/chat.png" class="img-fluid">
+                </div>
+                <h4 class="py-3">Social Marketing</h4>
+                <div class="line mb-3"></div>
+                <p>Start working with an company that provide everything you need to any create awareness drive</p>
+                <a href="#" class="btn">READ MORE</a>
+                <p class="text-right">.01</p>
+              </div>
+
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="team-info"  data-aos="fade-up">
+              <div class="vectorIMG ">
+                <div class="text-center">
+                  <img src="Images/target.png" class="img-fluid">
+                </div>
+                <h4 class="py-3">Digital Marketing</h4>
+                <div class="line mb-3"></div>
+                <p>Start working with an company that provide everything you need to any create awareness drive</p>
+                <a href="#" class="btn">READ MORE</a>
+                <p class="text-right">.02</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="team-info" data-aos="fade-left">
+              <div class="vectorIMG ">
+                <div class="text-center">
+                  <img src="Images/strategy.png" class="img-fluid">
+                </div>
+                <h4 class="py-3">SEO Optimization</h4>
+                <div class="line mb-3"></div>
+                <p>Start working with an company that provide everything you need to any create awareness drive</p>
+                <a href="#" class="btn">READ MORE</a>
+                <p class="text-right">.03</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end niceHover -->
+
+    <!-- start team progress info -->
+    <section class="team-progress py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="be-creative">
+              <h2>BE CREATIVE,</h2>
+              <h3 class="pb-4">ALWAYS</h3>
+              <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam ipsam ullam
+                incidunt itaque nemo omnis temporibus totam quibusdam repellat vero, recusandae excepturi dignissimos
+                velit et alias amet, quia facilis perferendis.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="authentication pl-5">
+              <div class="pb-3">
+                <i class="far fa-check-circle icoColor"><span>Research</span></i>
+              </div>
+              <div class="pb-3">
+                <i class="far fa-check-circle icoColor"><span>Opportunity Analysis</span></i>
+              </div>
+              <div class="pb-3">
+                <i class="far fa-check-circle icoColor"><span>Consulting</span></i>
+              </div>
+              <div class="pb-3">
+                <i class="far fa-check-circle icoColor"><span>Brand Planning</span></i>
+              </div>
+              <div class="pb-3">
+                <i class="far fa-check-circle icoColor"><span>Customer Support</span></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="progressing">
+              <div class="development mb-3">
+                <div class="row">
+                  <div class="col-6">
+                    <span>Development</span>
+                  </div>
+                  <div class="col-6 text-right">
+                    <span>90%</span>
+                  </div>
+                </div>
+                <div class="progress mt-3" style="height: 2px;">
+                  <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="25" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="development mb-3">
+                <div class="row">
+                  <div class="col-6">
+                    <span>Product Design</span>
+                  </div>
+                  <div class="col-6 text-right">
+                    <span>80%</span>
+                  </div>
+                </div>
+                <div class="progress mt-3" style="height: 2px;">
+                  <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="development mb-3">
+                <div class="row">
+                  <div class="col-6">
+                    <span>Web Marketing</span>
+                  </div>
+                  <div class="col-6 text-right">
+                    <span>95%</span>
+                  </div>
+                </div>
+                <div class="progress mt-3" style="height: 2px;">
+                  <div class="progress-bar" role="progressbar" style="width: 95%;" aria-valuenow="25" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+              </div>
+              <div class="development mb-3">
+                <div class="row">
+                  <div class="col-6">
+                    <span>Illustration</span>
+                  </div>
+                  <div class="col-6 text-right">
+                    <span>85%</span>
+                  </div>
+                </div>
+                <div class="progress mt-3" style="height: 2px;">
+                  <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="25" aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end team progress info -->
+
+    <!-- start our Services section -->
+    <section class="our-services pt-5 overflow-hidden">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="service-text text-center">
+              <h6 class="pb-2">WHAT WE DO</h6>
+              <h2>Our Services</h2>
+              <p>No coding skills required to create unique sites. Customize your site in real-time and see the results
+                instantly.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <!-- 1st service -->
+          <div class="col-md-6">
+            <div class="Services1 mt-5" data-aos="fade-up-right">
+              <h2>01.</h2>
+              <h3>Web Design</h3>
+              <p>Web design encompasses many different skills and disciplines in the production and maintenance of
+                websites. The different areas of web design include web graphic design, interface design, authoring,
+                including standardised code.</p>
+              <br>
+              <p>Web design partially overlaps web engineering in the broader scope of web development. Web designers
+                are expected to have an awareness of usability and if their role involves.
+              </p>
+              <div class="line1 mt-4"></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="service-img mt-5" data-aos="fade-up-left">
+              <img src="Images/slide_1_el1.png" class="img-fluid">
+            </div>
+          </div>
+          <!-- end of 1st service -->
+
+          <!-- 2nd service -->
+          <div class="col-md-6">
+            <div class="service-img mt-5" data-aos="fade-down-right">
+              <img src="Images/img_b.jpg" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="Services1 mt-5" data-aos="fade-down-left">
+              <h2>02.</h2>
+              <h3>Copywriting</h3>
+              <p>Copywriting is the act of writing text for the purpose of advertising or other forms of marketing. The
+                product, called copy, is written content that aims to increase brand awareness and ultimately persuade a
+                person or group to take a particular action.</p>
+              <br>
+              <p>Copywriters help create billboards, brochures, catalogs, jingle lyrics, magazine and newspaper
+                advertisements, sales letters and other direct mail, scripts for television.
+              </p>
+              <div class="line1 mt-4"></div>
+            </div>
+          </div>
+          <!-- end of 2nd service -->
+
+          <!-- 3rd service -->
+          <div class="col-md-6">
+            <div class="Services1 mt-5" data-aos="fade-down-right">
+              <h2>03.</h2>
+              <h3>Branding</h3>
+              <p>Branding has been around since 350 A.D and is derived from the word “Brandr”, meaning “to burn” in
+                Ancient Norse language. By the 1500s, it had come to mean the mark that ranchers burned on cattle to
+                signify ownership.</p>
+              <br>
+              <p>Yet branding today is more than just a look or a logo. It has come to signify the emotional “gut
+                feeling” reaction a company can elicit from its customers.
+              </p>
+              <div class="line1 mt-4"></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="service-img mt-5" data-aos="fade-down-left">
+              <img src="Images/img_review.jpg" class="img-fluid">
+            </div>
+          </div>
+          <!-- end of 3rd service -->
+
+          <!-- 4th service -->
+          <div class="col-md-6">
+            <div class="service-img mt-5" data-aos="fade-up-right">
+              <img src="Images/welcome_img.png" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="Services1 mt-5" data-aos="fade-up-left">
+              <h2>04.</h2>
+              <h3>Social Media</h3>
+              <p>A Facebook page on a smartphone screen Social media are interactive computer-mediated technologies that
+                facilitate the creation and sharing of information, ideas, career interests and other forms of
+                expression via virtual communities and networks.</p>
+              <br>
+              <p>Social media can help to improve an individual’s sense of connectedness with real or online
+                communities, and can be an effective communication.
+              </p>
+              <div class="line1 mt-4"></div>
+            </div>
+          </div>
+          <!-- end of 4th service -->
+
+          <!-- 5th service -->
+          <div class="col-md-6">
+            <div class="Services1 mt-5" data-aos="zoom-in">
+              <h2>05.</h2>
+              <h3>Print and Digital Design</h3>
+              <p>Digital Design is the process of visual communication and problem-solving through the use of
+                typography, photography and illustration. The field is conside#6022ea a subset of visual communication
+                and communication design.</p>
+              <br>
+              <p>Common uses of graphic design include corporate design, editorial design, wayfinding or environmental
+                design, advertising, web design, communication design.
+              </p>
+              <div class="line1 mt-4"></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="service-img mt-5" data-aos="zoom-in">
+              <img src="Images/img_b_01.png" class="img-fluid">
+            </div>
+          </div>
+          <!-- end of 5th service -->
+
+          <!-- 6th service -->
+          <div class="col-md-6">
+            <div class="service-img mt-5" data-aos="zoom-out-right">
+              <img src="Images/home-slider-layer1-test2.jpg" class="img-fluid">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="Services1 mt-5" data-aos="zoom-out-left">
+              <h2>06.</h2>
+              <h3>Art Direction</h3>
+              <p>Art director is the title for a variety of similar job functions in theater, advertising, marketing,
+                publishing, fashion, film and television, the Internet, and video games.</p>
+              <br>
+              <p>It is the charge of a sole art director to supervise and unify the vision. In particular, the art
+                director is in charge of the overall visual appearance and how it communicates visually, contrasts
+                features. The art director makes decisions about visual elements used.
+              </p>
+              <div class="line1 mt-4"></div>
+            </div>
+          </div>
+          <!-- end of 6th service -->
+        </div>
+      </div>
+    </section>
+    <!-- end our Services section -->
+    <!-- start our taem section -->
+    <section class="our-team pb-5 overflow-hidden">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 teamProf text-center">
+            <h6>PROFESSIONALS</h6>
+          </div>
+          <div class="col-12 teamDream text-center">
+            <h2>Dream Team</h2>
+          </div>
+          <div class="col-12 teamP text-center">
+            <p>No coding skills required to create unique sites. Customize your site in real-time and see the results
+              instantly.
+            </p>
+          </div>
+        </div>
+
+        <!-- team Members -->
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="team-member" data-aos="fade-up">
+              <img src="Images/member5-agency-600x600.jpg" class="img-fluid">
+
+              <div class="over-layer text-white d-flex justify-content-center align-items-center text-center">
+                <div>
+                  <h4 class="font-weight-bolder"><a href="team-details.html">Angela Doe</a></h4>
+                  <p>Designer</p>
+                  <a href="#"> <i class="fab fa-facebook-f"></i> </a>
+                  <a href="#"> <i class="fab fa-twitter"></i> </a>
+                  <a href="#"> <i class="fab fa-linkedin-in"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="team-member" data-aos="fade-up">
+              <img src="Images/member22-agency-600x600.jpg" class="img-fluid">
+
+              <div class="over-layer text-white d-flex justify-content-center align-items-center text-center">
+                <div>
+                  <h4 class="font-weight-bolder">Angela Doe</h4>
+                  <p>Designer</p>
+                  <a href="#"> <i class="fab fa-facebook-f"></i> </a>
+                  <a href="#"> <i class="fab fa-twitter"></i> </a>
+                  <a href="#"> <i class="fab fa-linkedin-in"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="team-member" data-aos="fade-up">
+              <img src="Images/member21-agency-600x600.jpg" class="img-fluid">
+
+              <div class="over-layer text-white d-flex justify-content-center align-items-center text-center">
+                <div>
+                  <h4 class="font-weight-bolder">Angela Doe</h4>
+                  <p>Designer</p>
+                  <a href="#"> <i class="fab fa-facebook-f"></i> </a>
+                  <a href="#"> <i class="fab fa-twitter"></i> </a>
+                  <a href="#"> <i class="fab fa-linkedin-in"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="team-member" data-aos="fade-right">
+              <img src="Images/member4-agency-600x600.jpg" class="img-fluid">
+
+              <div class="over-layer text-white d-flex justify-content-center align-items-center text-center">
+                <div>
+                  <h4 class="font-weight-bolder">Angela Doe</h4>
+                  <p>Designer</p>
+                  <a href="#"> <i class="fab fa-facebook-f"></i> </a>
+                  <a href="#"> <i class="fab fa-twitter"></i> </a>
+                  <a href="#"> <i class="fab fa-linkedin-in"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="team-member" data-aos="fade-up">
+              <img src="Images/member2-agency-600x600.jpg" class="img-fluid">
+
+              <div class="over-layer text-white d-flex justify-content-center align-items-center text-center">
+                <div>
+                  <h4 class="font-weight-bolder">Angela Doe</h4>
+                  <p>Designer</p>
+                  <a href="#"> <i class="fab fa-facebook-f"></i> </a>
+                  <a href="#"> <i class="fab fa-twitter"></i> </a>
+                  <a href="#"> <i class="fab fa-linkedin-in"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="team-member" data-aos="fade-left">
+              <img src="Images/testimonial-member1-600x600.jpg" class="img-fluid">
+
+              <div class="over-layer text-white d-flex justify-content-center align-items-center text-center">
+                <div>
+                  <h4 class="font-weight-bolder">Angela Doe</h4>
+                  <p>Designer</p>
+                  <a href="#"> <i class="fab fa-facebook-f"></i> </a>
+                  <a href="#"> <i class="fab fa-twitter"></i> </a>
+                  <a href="#"> <i class="fab fa-linkedin-in"></i> </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End our taem section -->
+
+    <!-- start Moveable img -->
+    <section class="movableIMG">
+    </section>
+    <!-- end Moveable img -->
+
+    <!-- start Projects Done -->
+    <section class="projects-done">
+      <div class="container">
+        <div class="col-12 text-center pt-5 teamStatistics">
+          <h2>Our Team Statistics</h2>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row no-gutters">
+          <div class="col-md-3 text-center">
+            <div class="team-projects">
+              <i class="fas fa-chart-line"></i>
+              <h5>Projects Done</h5>
+              <p>2500<sup>+</sup></p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="team-projects">
+              <i class="far fa-handshake"></i>
+              <h5>Success Rate</h5>
+              <p>98<sup>%</sup></p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="team-projects">
+              <i class="fas fa-medal"></i>
+              <h5>Awards</h5>
+              <p>70<sup>+</sup></p>
+            </div>
+          </div>
+          <div class="col-md-3 text-center">
+            <div class="team-projects">
+              <i class="fas fa-clipboard-check"></i>
+              <h5>Success Rate</h5>
+              <p>700<sup>+</sup></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- end Projects Done -->
+  </main>
+  <!-- Main Content - End -->
+
+  <!-- Footer Section - Start -->
+  <footer class="footer pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 pt-5">
+          <div class="betterFuture">
+            <img src="Images/L1.png" class="img-fluid">
+            <p class="pt-4">We’re on a mission to build a better future where technology creates good jobs for everyone.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3 pt-5">
+          <div class="team-links">
+            <h4>Links</h4>
+            <p><a href="#"><i class="fas fa-angle-right"></i><span>About us</span></a></p>
+            <p><a href="#"><i class="fas fa-angle-right"></i><span>Services</span></a></p>
+            <p><a href="#"><i class="fas fa-angle-right"></i><span>Projects</span></a></p>
+            <p><a href="#"><i class="fas fa-angle-right"></i><span>Our Team</span></a></p>
+            <p><a href="#"><i class="fas fa-angle-right"></i><span>Testimonial</span></a></p>
+            <p><a href="#"><i class="fas fa-angle-right"></i><span>Blog</span></a></p>
+          </div>
+        </div>
+        <div class="col-lg-3 pt-5">
+          <div class="team-location">
+            <h4>Team info</h4>
+            <p><i class="fas fa-map-marker-alt"></i><span>21 Revolution street,</span><br><span class="city">Paris,
+                France</span></p>
+            <p><i class="fas fa-mobile-alt"></i><span class="team-phone">+1 555 123456</span></p>
+            <p><i class="fas fa-envelope"></i><a href="#" class="text-decoration-none"><span
+                  class="team-support">support@company.com</span></a></p>
+          </div>
+        </div>
+        <div class="col-lg-3 pt-5">
+          <div class="about-company">
+            <h4>About the company</h4>
+            <p class="mt-3 text-muted">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fusce euismod convallis velit, eu auctor lcaus
+              vehicula sit amet.
+            </p>
+            <a href="#" class="text-decoration-none"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-decoration-none"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-decoration-none"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="text-decoration-none"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- start copyright footer -->
+    <div class="copy-right text-center mt-5">
+      <p class="text-white">Copyright © 2019 Unlimited Team. All Rights Reserved.</p>
+    </div>
+    <!-- end copyright footer -->
+  </footer>
+  <!-- Footer Section - End -->
+
+
+  <!-- This Is All Plugins used-->
+  <!-- JQuery Plugins include-->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Custom JQuery File-->
+  <script src="js/main.js"></script>
+
+
+
+</body>
+
+</html>

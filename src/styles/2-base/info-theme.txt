@@ -1,0 +1,33 @@
+/* - table of content - start
+==================================================================================================== */
+
+/* --------------------------------------------------
+Theme Name - HTML5 Template
+
+File:           CSS Base
+Version:        1.0
+Last change:    
+Author:         Mohamed Ali
+
+-------------------------------------------------- */
+
+
+/* --------------------------------------------------
+* 1 = fonts-load & global-area
+
+* 2 = header-section
+* 3 = footer-section
+* 4 = breadcrumb-section
+* 5 = right sidebar
+
+* 6 = home page
+* 7 = about page
+* 8 = blog page
+* 9 = service & blog - details page
+* 10 = contact page
+-------------------------------------------------- */
+
+/* - table of content - end
+==================================================================================================== */
+
+

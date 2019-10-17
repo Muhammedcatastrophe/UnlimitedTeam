@@ -1,0 +1,935 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+/* start home page*/
+
+.Home
+{
+    height: 100vh;
+    background-image: url(../../assets/images/bg-image-28.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+
+    .home-overlayer
+    {
+        
+        height: 100%;
+        background-color: rgba(96,34,234, 0.6);
+
+        .home-info
+        {
+            height: inherit;
+        }
+        .home-info h1
+        {
+            font-size: 75px;
+            color: #fff;
+            font-weight: bolder;
+            text-shadow: 0px 5px 5px #3C2D56;
+        }
+        .home-info p
+        {
+            color: #fff;
+        }
+        .home-info .homeBtn
+        {
+            background-color: #fff;
+            border: 2px solid #fff;
+            padding: 10px 15px;
+            text-decoration: none;
+            color: #000;
+            cursor: pointer;
+            transition: all 0.3s ease;
+           
+
+            &:hover
+            {
+                color: #fff;
+                background-color: #000;
+                border-color: #000;
+            }
+        }
+    }
+}
+/* end home page*/  
+
+
+
+
+
+
+
+
+/* start btnUp*/
+#btnUp
+{
+    background-color: $mainColor;
+    border-radius: 5px;
+    
+    padding: 7px 10px;
+    position: fixed;
+    bottom: 5%;
+    right: 2%;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    z-index: 999999999999999999999999999999;
+    i
+    {
+        color: #fff;
+        font-size: 20px;
+        transition: all 0.5s ease;
+    }
+    &:hover i
+    {
+        transform: translate(0,14%);
+    }
+    &:hover
+    {
+        background-color: #000;
+    }
+}
+/* end btnUp*/  
+
+/* start loading section*/
+
+.loading
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $mainColor;
+    z-index: 9999999999999999999999999999;
+
+    .SpacedDiv
+    {
+        height: 27%;
+        width: 100%;
+        opacity: 0;
+    }
+        .spinner {
+            margin: 100px auto;
+            width: 50px;
+            height: 40px;
+            text-align: center;
+            font-size: 10px;
+            }
+            .spinner > div {
+                background-color: #fff;
+                height: 100%;
+                width: 6px;
+                display: inline-block;
+                
+                -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+                animation: sk-stretchdelay 1.2s infinite ease-in-out;
+              }
+              .spinner
+              {
+                .rect2 {
+                    -webkit-animation-delay: -1.1s;
+                    animation-delay: -1.1s;
+                  }
+                  .rect3 {
+                    -webkit-animation-delay: -1.0s;
+                    animation-delay: -1.0s;
+                  }
+                  .rect4 {
+                    -webkit-animation-delay: -0.9s;
+                    animation-delay: -0.9s;
+                  }
+                  .rect5 {
+                    -webkit-animation-delay: -0.8s;
+                    animation-delay: -0.8s;
+                  }
+              }
+              @-webkit-keyframes sk-stretchdelay {
+                0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+                20% { -webkit-transform: scaleY(1.0) }
+              }
+              
+              @keyframes sk-stretchdelay {
+                0%, 40%, 100% { 
+                  transform: scaleY(0.4);
+                  -webkit-transform: scaleY(0.4);
+                }  20% { 
+                  transform: scaleY(1.0);
+                  -webkit-transform: scaleY(1.0);
+                }
+              }
+
+}
+/* end loading section*/
+
+
+
+
+/* start LeftSideBar toggler */ 
+.leftSideBar
+{
+    position: fixed;
+    background-color: rgba(0,0,0,0.5);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999999;
+    overflow: auto;
+
+    .fixedSideBar
+    {
+        // height: 100vh;
+        overflow: auto;
+        background-color: #fff;
+        width: 27%;
+        position: absolute;
+        top: 0;
+        right: -30%;
+        bottom: 0;
+        // display: none;
+      
+        .close-Icon {
+            
+            a
+            {
+                text-decoration: none;
+                &:hover
+                {  
+                    
+                    i {
+                        transform: rotate(90deg);
+                        color: $mainColor;
+                    }
+                }
+    
+                i
+                {
+                    color: #000;
+                    font-size: 38px;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
+                }
+            }
+        }
+
+
+        .fast-contact a
+        {
+            color: #000;
+            i
+            {
+                transition: all 0.5s ease;
+
+                font-size: 20px;
+                &:hover
+                {
+                    color: $mainColor;
+                    transform: translate(-0%,14%);
+                }
+            }
+        }
+
+        .latest-projects p
+        {
+            font-size: 0.8rem;
+        }
+        .latest-projects a 
+        {
+            text-decoration: none;
+            color: #000;
+            transition: all 0.5s ease;
+            
+
+            &:hover
+            {
+                color: $mainColor;
+            }
+            h6
+            {
+                font-weight: bolder;
+            }
+        }
+
+    }
+}
+
+/* end LeftSideBar toggler */ 
+
+
+/*start our-nav*/
+
+.team-nav
+{
+    .container
+    {
+        padding: 0px;
+    }
+    box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+    .animatedToggler
+    {
+        display: inline-block;
+        cursor: pointer;
+    }
+ 
+    .bar1, .bar2 , .bar3
+    {
+        width: 35px;
+        height: 3px;
+        background-color: #333;
+        margin: 5px 0;
+        transition: 0.4s;   
+    }
+    .change 
+    {
+        .bar1 
+        {
+            -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+            transform: rotate(-45deg) translate(-9px, 6px);
+        }
+        .bar2 {opacity: 0;}
+
+        .bar3 {
+            -webkit-transform: rotate(45deg) translate(-8px, -8px);
+            transform: rotate(45deg) translate(-8px, -8px);
+        }
+    }
+
+
+
+
+
+    .navbar-brand img
+    {
+        width: 30%;
+        height: 30%;
+    }
+    .navbar-nav
+    {
+        .border-hover {
+
+
+            &:hover {
+                
+                &::before {
+                    width: 100%;
+                    border-radius: 30px;
+                }
+            }
+            position: relative;
+            &::before {
+                
+                transition: all 0.5s ease;
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 0px;
+                width: 0%;
+                height: 3px;
+                background-color: $mainColor;
+            }
+        }
+        .nav-item
+        {
+
+            
+            .nav-link
+            {
+                font-weight: bolder;
+                padding: 0px 0px 8px 0px;
+                color: black;
+                margin-left: 15px;
+                margin-right: 15px;
+                margin-top: 15px;
+                margin-bottom: 10px;
+
+                transition: all 0.5s ease;
+                &:hover
+                {
+                    color: $mainColor;
+                }
+            }
+
+        }
+    }
+
+}
+.navbar
+{
+    padding: 0rem;
+}
+.navbar-light
+{
+    .navbar-brand
+    {
+        padding: 0px;
+    }
+}
+/*end our-nav*/
+
+
+/*start our team*/
+.our-team {
+    padding: 50px 0px 0px 0px;
+
+
+    background-color: $grayBG;
+
+    .teamProf h6 {
+        line-height: 0.6;
+        color: $mainColor;
+        font-weight: bold;
+        letter-spacing: 2px;
+        padding-top: 10px;
+    }
+
+    .teamDream h2 {
+        font-size: 55px;
+        padding-top: 10px;
+        font-weight: bolder;
+    }
+
+    .teamP {
+        margin: auto;
+        width: 65%;
+    }
+
+    .teamP p {
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+
+}
+
+
+.team-member {
+    position: relative;
+    overflow: hidden;
+
+    .over-layer {
+        background-color: $rgbaMainColor;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        transform: scale(0.7, 0.7);
+        opacity: 0;
+        transition: all 0.4s ease;
+    }
+
+    &:hover .over-layer {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+
+    img {
+        transition: all 0.6s 0.1s ease;
+    }
+
+    &:hover img {
+        transform: scale(1.1, 1.1);
+    }
+
+    .over-layer i {
+        padding: 0px 10px;
+        font-size: 19px;
+    }
+
+    .over-layer a {
+        text-decoration: none;
+        color: #fff;
+        transition: all 0.2s ease;
+
+        &:hover {
+            color: $socialHoverColor;
+
+        }
+    }
+}
+
+/* end our team */
+
+
+/* Start awesome web*/
+.awesomeWeb {
+    background-color: #fff;
+
+    .awesomeLEFT img 
+    {
+        width: 60%;
+        height: 60%;
+    }
+
+    .awesomeRIGHT h6
+    {
+        color: $mainColor;
+        letter-spacing: 2px;
+        font-weight: bolder;
+    }
+
+    .awesomeRIGHT h2 
+    {
+        font-size: 55px;
+        font-weight: bolder;
+        padding-bottom: 15px;
+    }
+
+    .awesomeRIGHT p 
+    {
+        padding-top: 15px;
+        margin-bottom: 50px;
+    }
+
+    .awesomeRIGHT a
+    {
+        text-decoration: none;
+        background-color: $mainColor;
+        padding: 15px 30px;
+        color: #fff;
+        transition: all 0.5s ease;
+    
+        
+        
+
+        &:hover
+        {
+            background-color: black
+        }
+    }
+    .awesomeRIGHT .btn
+    {
+        border-radius: 0px;
+    }
+
+
+}
+
+@media screen and (max-width: 600px) {
+    .awesomeWeb {
+        .awesomeRIGHT {
+            text-align: center;
+            padding-top: 25px;
+        }
+    }
+    .navbar
+    {
+        .navbar-nav
+        {
+            .nav-item
+            {
+                .nav-link  
+                {
+                    font-size: 12px;
+                }
+            }
+        }
+       .container
+       {
+           max-width: 600px;
+            .homeToggleIcon
+            {
+                display: none;  
+            }
+       } 
+       .navbar-brand 
+       {
+        width: 100px;
+        img{
+            width: 100%;
+            margin-left: 15px;
+        }
+       }
+    }
+
+}
+
+/* start home btn toggler display*/
+@media only screen and (max-width: 992px)
+ {
+     .navbar
+     {
+         .container
+         {
+            .homeToggleIcon
+            {
+                display: none;  
+            }
+         }
+     }
+ }
+/* end home btn toggler display*/
+
+
+/* End awesome web*/
+
+
+/* start movable img*/
+.movableIMG
+{
+    height: 400px;
+    background-image:url(../../assets/images/moveableImg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+/* end movable img*/
+
+
+
+/* start niceHover*/ 
+
+.nice-Hover
+{
+    background-color: $grayBG;
+    .team-info
+    {
+        padding: 20px;
+        transition: all 0.5s ease;
+        border-radius: 15px;
+        &:hover
+        {
+            background-color: #fff;
+            box-shadow:0 0 10px rgba(96,34,234, 0.5);
+            transform: translateY(-7%);
+
+            .vectorIMG a
+            {
+                background-color: $mainColor;
+                color: #fff;
+            }
+            .vectorIMG .line
+            {
+                width: 20%;
+            }
+            .vectorIMG img
+            {
+                transform: scale(1.1,1.1);
+            }
+        }
+        .vectorIMG img
+        {
+            height: 20%;
+            width: 20%;
+            transition: all 0.5s ease;
+            
+        }
+        .vectorIMG h4
+        {
+            font-weight: bolder;
+            font-size: 26px;
+        }
+        .vectorIMG a
+        {
+            text-decoration: none;
+            color:$mainColor;
+            border: 2px solid $mainColor;
+            padding : 10px 15px;
+            font-weight: bolder;
+            transition: all 0.5s ease;
+
+            &:hover
+            {
+                background-color: black;
+                border-color: black;
+                border-radius: 5px;
+            }
+        }
+        .vectorIMG .line
+        {
+            height: 2px;
+            background-color: $mainColor;
+            width: 10%;
+            transition: all 0.5s ease;
+        }
+        .vectorIMG .btn
+        {
+            border-radius: 0px;
+        }
+
+    }
+
+}
+/* end niceHover*/
+
+
+/* start our Service*/
+
+.our-services
+{
+    
+    .service-text P
+    {
+        margin: auto;
+        width: 62%;
+    }
+    .service-text h6
+    {
+        color: $mainColor;
+        font-weight: bolder;
+    }
+    .service-text h2
+    {
+        font-size: 55px;
+        font-weight: bolder;
+    }
+
+    .Services1 h2
+    {
+        color: $mainColor;
+        font-size: 55px;
+        font-weight: bolder;
+    }
+    .Services1 h3
+    {
+        font-size: 45px;
+        font-weight: bolder;
+        padding-top: 10px;
+    }
+    .Services1 .line1
+    {
+        height: 5px;
+        border-radius: 5px;
+        background-color: $mainColor;
+        width:20%;
+        
+    }
+
+
+
+}
+/* end our Service*/
+
+/* start of team projects*/
+
+.projects-done
+{
+    background-color: $mainColor;
+
+    .teamStatistics h2
+    {
+        font-size: 55px;
+        font-weight: bolder;
+        color: #fff;
+    }
+    .team-projects
+    {
+        padding: 50px;
+        margin: 40px 0px;
+        border-right: 1px solid #fff;
+        border-left: 1px solid #fff;
+        transition: all 0.5s ease;
+
+        &:hover
+        {
+            background-color: #fff;
+            border-radius: 5px;
+            transform: scale(1.1,1.1);
+
+            h5
+            {
+                color: $mainColor;
+            }
+            i
+            {
+                color: $mainColor;
+            }
+            p
+            {
+                color: $mainColor;
+            }
+        }
+    }
+    .team-projects i
+    {
+        font-size: 45px;
+        color: #fff;
+    }
+    .team-projects h5
+    {
+        padding-top: 10px;
+        color: #fff;
+        font-weight: bolder;
+    }
+    .team-projects p
+    {
+        color: #fff;
+        font-size: 35px;
+        font-weight: bolder;
+
+    }
+}
+/* end of team projects*/
+
+
+/* start team progress*/
+
+.team-progress
+{
+    background-color: $grayBG;
+
+    .development
+    {
+        .progress
+        {
+            .progress-bar
+            {
+                background-color: $mainColor;
+            }
+        }
+    }
+
+    .be-creative h2
+    {
+        font-weight: bolder;
+        font-size: 42px;
+    }
+    .be-creative h3
+    {
+        font-weight: bold;
+
+    }
+ 
+    .authentication
+    {
+        .icoColor
+        {
+            color: $mainColor;
+        }
+        span
+        {
+        padding-left: 10px;
+        color: #6c757d;
+        font-size: 18px;
+        }
+    }
+
+    
+
+}
+/* end team progress*/  
+
+
+/* start footer*/
+.footer
+{
+    background-color: #262626;
+    .betterFuture img
+    {
+        width: 50%;
+        height: 50%;
+    }
+    .betterFuture p
+    {
+        color: #fff;
+    }
+
+
+
+    .team-links h4
+    {
+        color: #fff;
+        font-weight: bolder;
+    }
+    .team-links span
+    {
+        color: #fff;
+    }
+    .team-links i
+    {
+        color: $mainColor;
+        padding-right: 8px;
+    }
+    .team-links a
+    {
+        text-decoration: none;
+    }
+    .team-links p
+    {
+        transition: all 0.5s ease;
+        &:hover
+        {
+            transform: translate(7%,0);
+        }
+    }
+
+    .team-location h4
+    {
+        font-weight: bolder;
+        color: #fff;
+    }
+    .team-location p i
+    {
+        color: $mainColor;
+        padding-right: 8px;
+        font-size: 20px;
+
+    }
+    .team-location p span
+    {
+        color: #fff;
+    }
+    .team-location p .city
+    {
+        color: #fff;
+        font-weight: bolder;
+        font-size: 22px;
+        padding-left: 25px;
+    }
+    .team-location p .team-phone
+    {
+        font-size: 20px;
+        color: #fff;
+        font-weight: bold;
+    }
+    .team-location p .team-support
+    {
+        font-weight: bold;
+    }
+
+
+    .about-company h4
+    {
+        font-weight: bolder;
+        color: #fff;
+    }
+
+    .about-company a
+    {
+        color: #fff;
+ 
+    }
+    .about-company i
+    {
+        padding: 10px 15px;
+        background-color:#444444 ;
+        margin: 0 5px;
+        border-radius: 5px;
+        transition: all 0.5s ease;
+        margin-bottom: 15px;
+
+        &:hover
+        {
+            transform: translate(0,20%);
+        }
+    }
+// Copyright © 2019 Zine EOOD. All Rights Reserved.
+
+    .copy-right
+    {
+        background-color: rgb(26, 23, 23);
+        p
+        {
+            padding: 20px;
+            margin: 0;
+        }
+    }
+}
+/* end fotter*/  
+
+
